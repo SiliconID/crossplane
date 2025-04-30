@@ -1,0 +1,13 @@
+apiVersion: ec2.aws.upbound.io/v1beta1
+kind: VPC
+metadata:
+  name: main
+  annotations:
+    meta.upbound.io/example-id: ec2/v1beta1/vpc
+spec:
+  forProvider:
+    region: us-east-2
+    cidrBlock: 172.31.0.0/16
+    tags:
+      Name: main
+---
